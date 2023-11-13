@@ -1,0 +1,77 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<script>
+    // JavaScript function to open the link
+    function openLink() {
+        // Change the window.location.href to the desired link
+        window.location.href = "more";
+    }
+</script>
+<div class="bod">
+    <link href="{{url_for('static',filename='css/subscription.css') }}" rel="stylesheet"><br><br>
+<div class="container-fluid"> 
+        <div class="container text-center">
+            <div class="row align-items-start">
+                <div class="col">
+                    Select<br><br>
+                    <input class="radio" type="radio" id="option1" name="radioGroup">
+                    <hr class="center-line"> <input class="radio" type="radio" id="option2" name="radioGroup">
+                    <hr class="center-line"> <input class="radio" type="radio" id="option3" name="radioGroup">
+                    <hr class="center-line">
+                    <input class="radio" type="radio" id="option4" name="radioGroup">
+                    <hr class="center-line">
+                </div>
+                <div class="col">
+                    Images<br><br>
+                    3
+                    <hr class="center-line"> 10
+                    <hr class="center-line"> 15
+                    <hr class="center-line"> 30
+                    <hr class="center-line">
+                </div>
+                <div class="col">
+                    Discount<br><Br>
+                    20%
+                    <hr class="center-line">40%
+                    <hr class="center-line">70%
+                    <hr class="center-line">80%
+                    <hr class="center-line">
+
+                </div>
+                <div class="col">
+                    Price<br><Br>
+                    38,400
+                    <hr class="center-line">96,000
+                    <hr class="center-line">144,000
+                    <hr class="center-line">
+                    320,000
+                    <hr class="center-line">
+                </div>
+                <div class="col">
+                    Per Image/Video (Rs.)<br><Br>
+                    6400
+                    <hr class="center-line">4800
+                    <hr class="center-line">2400
+                    <hr class="center-line">
+                    1600
+                    <hr class="center-line">
+                </div>
+                <div class="col">
+                    Download Within<br><Br>
+                    30 days
+                    <hr class="center-line">90 days
+                    <hr class="center-line">180 days
+                    <hr class="center-line">
+                    365 days
+                    <hr class="center-line">
+                </div>
+            </div>
+        </div><div class="row-right"><button type="button" class="btn btn-outline-success" onclick="openLink()">Subscribe</button></div>
+    </div>
+
+</div>
+<script src="{{url_for('static',filename='js/subscription.js') }}"></script>
+    
+<br><br>
+{% endblock %}

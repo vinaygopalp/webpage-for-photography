@@ -1,0 +1,31 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Given parameters
+fc = 6e8  # Carrier frequency in Hz
+fm = 1250  # Modulating frequency in Hz
+A_c = 12  # Amplitude of carrier signal
+A_m = 5   # Amplitude of modulating signal
+
+# Time values
+t = np.linspace(0, 0.01, num=10000)  # Time from 0 to 0.01 seconds
+
+# FM signal
+s_fm = A_c * np.sin(2 * np.pi * fc * t + A_m * np.sin(2 * np.pi * fm * t))
+
+# Calculate FFT
+spectrum = np.fft.fft(s_fm)
+frequencies = np.fft.fftfreq(len(s_fm), t[1] - t[0])
+spectrum = np.fft.fftshift(spectrum)
+frequencies = np.fft.fftshift(frequencies)
+
+# Plot spectrum
+plt.figure(figsize=(10, 6))
+plt.plot(frequencies, np.abs(spectrum))
+plt.xlabel('Frequency (Hz)')
+plt.ylabel('Magnitude')
+plt.title('Sample Spectrum of FM Signal')
+plt.grid(True)
+plt.xlim(-1.5 * fm, 1.5 * fm)
+plt.ylim(0, max(np.abs(spectrum)) + 10)
+plt.show()

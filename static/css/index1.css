@@ -1,0 +1,33 @@
+ 
+#nature,#aircrafts,#more,#fusion{
+    font-weight: 900;
+    color:#ECECEC;
+    font-size:50px;
+    text-align: center;
+    
+     
+  }
+ 
+.imgg:hover:hover{
+    transform: scale(1.2);
+  }
+ 
+
+  img{
+    
+    border-radius: 20px;
+    box-shadow:  0px 4px 8px rgb(106, 8, 8);
+     
+  }
+ 
+  .center-line {
+    border: none;
+    border-top: 1px solid #000000;
+    width: 100%;
+    margin-top: 20px; /* Adjust as needed */
+    margin-bottom: 20px; /* Adjust as needed */
+  }
+  #team{
+    width: 100%;
+     
+  }

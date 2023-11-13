@@ -1,0 +1,149 @@
+{% extends "layout.html" %}
+{% block body %}
+
+
+<!-- NATURE --><br>
+<div id="nature">
+    Sunrise
+ </div>
+ <br>
+ <div class="container text-center">
+   <div class="row align-items-start">
+     <div class="col">
+       <a href="{{url_for('static', filename='img/nature/nature2.jpeg') }}"alt="Photograph" class="zoomable" download>
+       <img src="{{url_for('static',filename='img/nature/nature2.jpeg') }}"   style="height:450px; width: 400px;"></a>
+       <br><br><br>
+ 
+       <img src="{{url_for('static',filename='img/nature/sunrise1.jpeg') }}" style="height:300px; width: 400px;">
+       <br>
+     </div>
+     <div class="col">
+       <img src="{{url_for('static',filename='img/nature/nature3.jpeg') }}" style="height:400px; width: 350px;"><br><br><br>
+       <img src="{{url_for('static',filename='img/nature/nature9.jpeg') }}" style="height:200px; width: 350px;"><br><br><br>
+       <img src="{{url_for('static',filename='img/nature/nature6.jpeg') }}" style="height:400px; width:350px;">
+     </div>
+     <div class="col">
+       <img src="{{url_for('static',filename='img/nature/nature8.jpeg') }}" style="height:300px; width: 450px;"><br><br><br>
+       <img src="{{url_for('static',filename='img/nature/nature5.jpeg') }}" style="height:200px; width: 350px;"><br><br><br>
+       <img src="{{url_for('static',filename='img/nature/nature7.jpeg') }}" style="height:300px; width: 400px;">
+   </div>
+ </div>
+ 
+ 
+   
+   
+ </div>
+ 
+  <!-- AIRCRAFT -->
+  <br><br>
+  <div id="aircrafts">
+    <hr class="center-line">
+    Aircraft
+    <br>
+  </div>
+
+  <div class="container text-center">
+    <div class="row align-items-start">
+      <div class="col">
+        <img src="{{url_for('static',filename='img/aircraft/aircraft8.jpeg') }}" style="height:250px; width:350px;">
+        <br><br>
+
+
+      </div>
+      <div class="col">
+        <img src="{{url_for('static',filename='img/aircraft/aircraft2.jpeg') }}"
+          style="height:250px; width: 400px;"><br>
+
+      </div>
+      <div class="col">
+        <img src="{{url_for('static',filename='img/aircraft/aircraft5.jpeg') }}"
+          style="height:300px; width: 450px;"><br>
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <img src="{{url_for('static',filename='img/aircraft/aircraft4.jpeg') }}" style="height:300px; width:450px;">
+        <br>
+      </div>
+      <div class="col">
+        <img src="{{url_for('static',filename='img/aircraft/aircraft3.jpeg') }}"
+          style="height:400px; width: 350px;"><br>
+      </div>
+      <div class="col"><br>
+        <img src="{{url_for('static',filename='img/aircraft/aircraft6.jpeg') }}"
+          style="height:300px; width: 450px;"><br>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col"><br>
+        <img src="{{url_for('static',filename='img/aircraft/aircraft1.jpeg') }}" style="height:450px; width:600px;">
+        <br>
+      </div>
+      <div class="col"><br>
+        <img src="{{url_for('static',filename='img/aircraft/aircraft7.jpeg') }}" style="height:450px; width:600px;"><br>
+      </div></div>
+      <br><br><br>
+  
+
+
+
+  <!-- Image Fusion -->
+  <br><br>
+  <div id="fusion">
+    <hr class="center-line">
+    Image Fusion
+    <br>
+  </div>
+
+  <div class="container text-center">
+    <div class="row ">
+      <div class="col">
+        <img src="{{url_for('static',filename='img/fusion/f9.jpeg') }}" style="height:400px; width:350px;">
+        <br><br>
+      </div>
+      <div class="col">
+        <img src="{{url_for('static',filename='img/fusion/f2.jpeg') }}"
+          style="height:250px; width: 400px;">
+          <br>
+           
+      </div>
+      <div class="col">
+        <img src="{{url_for('static',filename='img/fusion/f3.jpeg') }}"
+          style="height:300px; width: 450px;"><br>
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <img src="{{url_for('static',filename='img/fusion/f4.jpeg') }}" style="height:300px; width:450px;">
+        
+      </div>
+      <div class="col">
+        <img src="{{url_for('static',filename='img/fusion/f5.jpeg') }}"
+          style="height:400px; width:300px;"><br>
+      </div>
+      <div class="col"><br>
+        <img src="{{url_for('static',filename='img/fusion/f6.jpeg') }}"
+          style="height:300px; width: 450px;"><br>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col"><br>
+        <img src="{{url_for('static',filename='img/fusion/f7.jpeg') }}" style="height:350px; width:500px;">
+        <br>
+      </div>
+      <div class="col"><br>
+        <img src="{{url_for('static',filename='img/fusion/f8.jpeg') }}" style="height:400px; width:350px;"><br>
+      </div>
+      <div class="col"><br>
+        <img src="{{url_for('static',filename='img/fusion/f1.jpeg') }}" style="height:300px; width:350px;"><br>
+      </div></div>
+      <br><br><br>
+ 
+      <hr class="center-line">
+
+
+{% endblock %}
